@@ -1,1 +1,144 @@
-First comit
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <!-- 文字コード -->
+  <meta charset="utf-8">
+
+  <!-- 作者情報 -->
+  <meta name="author" content="Kazuyuki Yamada">
+
+  <!-- 概要文 -->
+  <meta name="description" content="自己紹介サイト">
+
+  <title>自己紹介サイト</title>
+
+  <!-- cssの埋め込み -->
+  <link rel="stylesheet" href="../css/introduction.css?date=20200515">
+
+  <!-- jQuery CDNの利用 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/sample.js"></script>
+
+
+ </head>
+
+ <body>
+  <header>  <!-- ページ上部に配置される情報 ヘッダ -->
+   <!-- 大見出し(h1) -->
+   <h1>Kazuyuki Yamada</h1>
+  </header>
+
+  <div>
+  <nav>  <!-- 他のページに移動するための情報 ナビゲーション -->
+
+   <ul class = "button">
+       <li id = "button1">ポケモン</li>
+
+       <li id = "button2">お笑い</li>
+
+       <li id = "button3">サッカー</li>
+
+       <li id = "button4">旅行</li>
+   </ul>
+
+
+   <!-- 画像 --> <!-- タブの作成 -->
+   <ul class = "menu" id = "tabcontrol">
+    <li><a href="#tabpage1"><img src="../image/ミュウ01.gif" alt="ポケモン" class = "navigate" id = 'navigate1'></a></li>
+
+    <li><a href="#tabpage2"><img src="../image/ソーナンス01.gif" alt="お笑い" class = "navigate" id = 'navigate2'></a></li>
+
+    <li><a href="#tabpage3"><img src="../image/ピカチュウ_サッカー.gif" alt="サッカー" class = "navigate" id = 'navigate3'></a></li>
+
+    <li><a href="#tabpage4"><img src="../image/ピカチュウ＆ぺリッパー.gif" alt="旅行" class = "navigate" id = 'navigate4'></a></li>
+   </ul>
+
+
+  </nav>
+
+  <main>  <!-- ページの本文 メインコンテンツ -->
+
+  <!-- タブの中身 -->
+   <div id="tabbody">
+
+    <div id="tabpage1">
+     <h2 id = "pokemon">ポケモン -Pokemon-</h2>
+      <p id = "pokemonbody">レイアウトからお気づきかもしれませんが、ポケモンがすごく好きです。<br>
+         ゲーム、アニメ、キャラクターどれも好きでグッズもよく買います。<br>
+         <br>
+         下のモンスターボールから好きなポケモンを選んでクリックしてみてください。
+      </p> <!-- 改行(br) -->
+
+      <p id= "demo"><img src="../image/メタモン01.gif"  class = "demo1"></p>
+
+      <ul class = "exp" id = "explanation">
+       <li id = "explanation1">たねポケモン<br>001 フシギダネ</li>
+
+       <li id = "explanation2">とかげポケモン<br>004 ヒトカゲ</li>
+
+       <li id = "explanation3">かめのこポケモン<br>007 ゼニガメ</li>
+      </ul>
+
+
+      <!-- 画像 --> <!-- タブの作成 -->
+
+      <ul class = "select" id = "selectcontrol">
+       <li><img src="../image/モンスターボール.gif" alt="モンボ" class = "ball" id = "ball1"></li>
+
+       <li><img src="../image/モンスターボール.gif" alt="モンボ" class = "ball" id = "ball2"></li>
+
+       <li><img src="../image/モンスターボール.gif" alt="モンボ" class = "ball" id = "ball3"></li>
+      </ul>
+
+    </div>
+
+
+    <div id="tabpage2">
+     <h2 id = "comedy">お笑い -Comedy-</h2>
+      <p id = "comedybody">お笑いを見るのがすごく好きで、休みの日はテレビやYouTubeを観て過ごしています。<br>
+         好きなお笑い芸人は、ハライチ、オードリー、霜降り明星、ジャルジャルです。<br>
+         他にもたくさんいますのでぜひおすすめの芸人を聞いてください。<br>
+         <br>
+         下に好きなコントを張っておきます。
+      </p>
+      <iframe width="600" height="400" src="https://www.youtube.com/embed/pfJVE_NI7D0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div id="tabpage3">
+    <h2 id = "soccer">サッカー -Soccer-</h2>
+     <p id = "soccerbody">好きなスポーツはサッカーで、観るのもやるのも好きです。<br>
+        ガンバ大阪というチームを応援していて、特に遠藤保仁選手が好きです。<br>
+        あまり多くはありませんが、スタジアムに足を運ぶこともあります。<br>
+        <br>
+        下の動画は遠藤選手のお気に入りのプレーシーンです。
+     </p>
+     <iframe width="600" height="400" src="https://www.youtube.com/embed/OYSzg0tac5U?start=260" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div id="tabpage4">
+    <h2 id = "trip">旅行 -Trip-</h2>
+     <p id = "tripbody">旅行が好きでよくガイドブックや旅行サイトを眺めています。<br>
+        小学生の時に立てた将来の夢が「海外旅行に行く」ですが、<br>
+        まだ叶えられていないので近いうちに叶えられたなと思っています。<br>
+        <br>
+        下のスライドショーは愛媛・広島へ旅行に行った時の写真です。
+     </p>
+     <img id="mypic"src= "../image/trip1.jpg" class="trip">
+    </div>
+
+   </div>
+  </main>
+  </div>
+
+  <footer>  <!-- コピーライトや所在地 フッタ -->
+   <p>Copyright 2020 Kazuyuki Yamada</p>
+  </footer>
+
+  <!-- jsの埋め込み(/bodyの直前に書く) -->
+  <script src="../js/introduction.js?date=20200515"></script>
+ </body>
+
+</html>

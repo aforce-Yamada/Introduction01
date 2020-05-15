@@ -1,0 +1,196 @@
+/*画面配色*/
+body {
+	background: #487ca3;
+}
+
+/*メニューボタン*/
+.button li {
+	width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+	font-size:140%;
+	font-weight: 700;
+}
+
+#button1 {
+	color: pink;
+}
+
+#button2 {
+	color: skyblue;
+}
+
+#button3 {
+	color: yellow;
+}
+
+#button4 {
+	color: white;
+}
+
+ /*見出し色の変更*/
+h1{
+	background: #dfd4be;
+	color:#58656e;
+	font-size:250%;
+}
+
+h2{
+	background: black;
+	font-size: 170%;
+}
+
+#pokemon {
+	color: pink;
+}
+
+#comedy {
+	color: skyblue;
+}
+
+#soccer {
+	color: yellow;
+}
+
+#trip {
+	color: white;
+}
+
+
+/*メニュー画像*/
+ /*画像の大きさ*/
+img.navigate {
+	width: 300px;
+	height: 210px;
+}
+
+ /*間隔をそろえる*/
+.menu {
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.menu li {
+	width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+	padding:0 3px;/*←画像の左右に3pxの余白を入れる場合*/
+	box-sizing:border-box;
+}
+.menu li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+}
+
+/*本文*/
+#pokemonbody,#comedybody,#soccerbody,#tripbody {
+	font-size:115%;
+
+}
+
+/*ポケモン説明*/
+.exp li {
+	width: calc(100%/3);/*←画像を横に3つ並べる場合*/
+	padding:0 3px;/*←画像の左右に3pxの余白を入れる場合*/
+	box-sizing:border-box;
+	font-size:130%;
+}
+
+#explanation1 {
+	color: green;
+	opacity:0;
+}
+
+#explanation2 {
+	color: orange;
+	opacity:0;
+}
+
+#explanation3 {
+	color: blue;
+	opacity:0;
+}
+
+/*ポケモン画像位置 (最初は白画面)*/
+#demo {
+	width: 350px;
+	height: 350px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+img.demo1 {
+	width: 350px;
+	height: 350px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+/*モンスターボール*/
+img.ball {
+	width: 150px;
+	height: 150px;
+ /*上下左右の余白*/
+	padding-top:0px;
+}
+.select {
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.select li {
+	width: calc(100%/3);/*←画像を横に3つ並べる場合*/
+	padding:0 1px;/*←画像の左右に3pxの余白を入れる場合*/
+	box-sizing:border-box;
+
+}
+.select li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+
+}
+
+ /*揺れる動き*/
+#ball1,#ball2,#ball3
+{
+  transform: rotate(0deg);
+  transition: transform 0.8s;
+}
+
+/*スライドショー画像調整*/
+img.trip {
+	 width: 600px;
+	 height: 400px;
+	 filter: brightness(120%);
+	 filter: contrast(120%);
+	 filter: saturate(130%);
+	 filter: opacity(90%);
+}
+
+/*箇条書きの・を削除*/
+li{
+	list-style:none;
+	float:left;
+}
+
+/*中央配置*/
+div{
+	width:840px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+h1,h2,li,footer,#tabbody{
+	text-align:center;
+}
+
+ul:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/* ▼タブの中身 */
+#tabbody div {
+   border: 1px solid black; /* 枠線：黒色の実線を1pxの太さで引く */
+   margin-top: -1px;        /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+   padding: 1em;            /* 内側の余白量 */
+   background: #dfd4be; /* 背景色：白色 */
+   position: relative;      /* z-indexを調整するために必要 */
+   z-index: 0;              /* 重なり順序を「最も背面」にするため */
+}
+
